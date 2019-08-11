@@ -4,10 +4,8 @@ class Anagram
     @word = word 
   end 
 def match(word_array) 
-  word_array.each do |new_word| new_word.split("").sort == @word.split("").sort 
-  puts true 
-else 
-  false
+  word_array.select do |new_word| new_word.split("").sort == @word.split("").sort 
+  
 end 
 end 
 end 
