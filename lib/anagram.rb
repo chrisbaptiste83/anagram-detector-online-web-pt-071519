@@ -7,6 +7,7 @@ def match(word_array)
   word_array.each do |new_word| if new_word.split(",").sort == @word.split(",").sort 
   true 
 else 
+  false
 end 
 end 
 end 
